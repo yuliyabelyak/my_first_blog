@@ -1,0 +1,338 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/news.css' %}" type="text/css"></link>
+
+<link rel="shortcut icon" href="heart.png" type="img/jpg">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <title>News</title>
+  </head>
+  <body style="background-color:#03043B">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Main
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="file:///C:/Users/Admin/Desktop/djangoproject/blog/templates/blog/merch.html">merch</a>
+              <a class="dropdown-item" href="https://www.playstation.com/en-us/games/undertale-ps4/">chat</a>
+              <a class="dropdown-item" href="#">news</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<div class="main">
+    <div id="contentWrapper" class="clearfix">
+              <div id="contentContainer">
+
+                <div id="content">
+                  <div class="entryList">
+      <article class="entry large clearfix" itemscope itemtype="">
+    	<meta itemprop="url" content="" />
+    	<header class="clearfix">
+    		<h2 class="entryTitle">
+    			<a id="name" href="" itemprop="headline" title="Первая глава Deltarune выйдет на PS4 в конце февраля">Первая глава Deltarune выйдет на PS4 в конце февраля</a>
+    		</h2>
+    		<div class="entryByline style-full">
+      <meta itemprop="datePublished" content="2019-02-21 15:00:00" />
+      <meta itemprop="interactionCount" content="UserComments:1" />
+      <a class="entryComments" href=""><i class="icon iconComment"></i></a>
+    </div>
+
+    		<div class="entryImage">
+    			<a href="" title="Первая глава Deltarune выйдет на PS4 в конце февраля">
+    				<img src="https://cdn.shazoo.ru/c670x230/321967_bC1RNiAEC2_deltarune.jpg" />
+    			</a>
+    		</div>
+    	</header>
+    	<div class="entryContent clearfix entryLead" itemprop="description">
+        {% for post in posts %}
+            <div class="post">
+                <div class="date">
+                    <p>published: {{ post.published_date }}</p>
+                </div>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    	</div>
+    </article>
+
+      <article class="entry large clearfix" itemscope itemtype="">
+    	<meta itemprop="url" content="" />
+    	<header class="clearfix">
+    		<h2 class="entryTitle">
+    			<a id="name2" href="" itemprop="headline" title="События Deltarune разворачиваются не во вселенной Undertale">События Deltarune разворачиваются не во вселенной Undertale</a>
+    		</h2>
+    		<div class="entryByline style-full">
+      <meta itemprop="datePublished" content="2018-11-02 17:40:00" />
+      <meta itemprop="interactionCount" content="UserComments:6" />
+      <a class="entryComments" href=""><i class="icon iconComment"></i></a>
+    </div>
+
+    		<div class="entryImage">
+    			<a href="" title="События Deltarune разворачиваются не во вселенной Undertale">
+    				<img src="https://cdn.shazoo.ru/c670x230/298740_E6fwvFNmAL_deltarune1_1038x576.jpg" />
+    			</a>
+    		</div>
+    	</header>
+    	<div class="entryContent clearfix entryLead" itemprop="description">
+    		Инди-разработчик Тоби Фокс вчера выпустил первую главу своей новой игры под названием Deltarune. Многие фанаты Unertale сразу же стали искать связь с другим тайтлом разработчика &mdash; Undertale. Он опубликовал небольшое FAQ, чтобы немного прояснить ситуацию с сеттингом и сроками выхода.
+    Во-первых, разработчик отметил, что&nbsp;Deltarune&nbsp;не является приквелом или сиквелом Undertale.
+
+    Мир Undertale и ее финал такие же, как вы их оставили. Если в концовке все остались счастливы &mdash; так все и останется. Пожалуйста, не волнуйтесь за персонажей и вселенной Undertale. Они останутся нетр...
+    	</div>
+    </article>
+
+      <article class="entry large clearfix" itemscope itemtype="">
+    	<meta itemprop="url" content="" />
+    	<header class="clearfix">
+    		<h2 class="entryTitle">
+    			<a  id="name3" href="" itemprop="headline" title="Разработчик Undertale выпустил загадочную бесплатную игру Deltarune">Разработчик Undertale выпустил загадочную бесплатную игру Deltarune</a>
+    		</h2>
+    		<div class="entryByline style-full">
+      <meta itemprop="datePublished" content="2018-10-31 16:55:00" />
+      <meta itemprop="interactionCount" content="UserComments:6" />
+      <a class="entryComments" href=""><i class="icon iconComment"></i></a>
+    </div>
+    <div class="entryImage">
+			<a href="" title="Разработчик Undertale выпустил загадочную бесплатную игру Deltarune">
+				<img src="https://cdn.shazoo.ru/c670x230/298187_gLuZ7mjKmU_d.jpg" />
+			</a>
+		</div>
+	</header>
+	<div class="entryContent clearfix entryLead" itemprop="description">
+		Инди-разработчик Тоби Фокс, известный как автор Undertale,&nbsp;выпустил новую игру&nbsp;&mdash;&nbsp;Deltarune.&nbsp;Все желающие могут бесплатно её скачать&nbsp;и установить на PC или Mac.
+Название нового проекта Тоби Фокса&nbsp;&mdash; это анаграмма тайтла Undertale. Другие подробности игры пока неизвестны. Согласно анонсу на официальном сайте&nbsp;Deltarune, чтобы войти в игру, нужно разрешить антивирусным программам её запустить. Тоби Фокс также посоветовал всем, кто опробует&nbsp;Deltarune, в течение 24 часов не обсуждать её&nbsp;&mdash; "ради общественной безопасности".
+Скачать&nbsp;D...
+	</div>
+</article>
+
+  <article class="entry large clearfix" itemscope itemtype="">
+	<meta itemprop="url" content="" />
+	<header class="clearfix">
+		<h2 id="sozdatel" class="entryTitle">
+			<a id="name4" href="" itemprop="headline" title="Создатель Undertale тизерит некий анонс">Создатель Undertale тизерит некий анонс</a>
+		</h2>
+		<div class="entryByline style-full">
+  <meta itemprop="datePublished" content="2018-10-31 11:40:00" />
+  <meta itemprop="interactionCount" content="UserComments:3" />
+  <a class="entryComments" href=""><i class="icon iconComment"></i></a>
+</div>
+
+		<div class="entryImage">
+			<a href="" title="Создатель Undertale тизерит некий анонс">
+				<img src="https://cdn.shazoo.ru/c670x230/297963_vjErVDDW4Y_cover.jpg" />
+			</a>
+		</div>
+	</header>
+	<div class="entryContent clearfix entryLead" itemprop="description">
+		Создатель невероятно популярной инди-игры Undertale Тоби Фокс в твиттере начал тизерить некий анонс. В сообщении он указал, что совсем скоро представит "нечто интересное". Разработчик посоветовал поглядывать за официальным твиттер-аккаунтом Undertale, на котором сегодня в&nbsp;16:00 по МСК и состоится таинственный анонс.
+    For those who completed UNDERTALE it's really important that you check @UNDERTALE 24 hours from now.I want to make something new, and it all begins with your feedback.A Windows PC / MacOSX PC is needed. https://t.co/N1IJLyiswy
+    &mdash; tobyfox (@tobyfox) 30 октября 2018 г.
+...
+    	</div>
+    </article>
+
+      <article class="entry large clearfix" itemscope itemtype="">
+    	<meta itemprop="url" content="" />
+    	<header class="clearfix">
+    		<h2 class="entryTitle">
+    			<a id="name5" href="" itemprop="headline" title="Пополнение для Switch: Undertale, Crash Bandicoot и Super Smash Bros.">Пополнение для Switch: Undertale, Crash Bandicoot и Super Smash Bros.</a>
+    		</h2>
+    		<div class="entryByline style-full">
+      <meta itemprop="datePublished" content="2018-03-09 01:40:00" />
+      <meta itemprop="interactionCount" content="UserComments:10" />
+      <a class="entryComments" href=""><i class="icon iconComment"></i></a>
+    </div>
+    <div class="entryImage">
+			<a href="" title="Пополнение для Switch: Undertale, Crash Bandicoot и Super Smash Bros.">
+				<img src="https://cdn.shazoo.ru/c670x230/245617_54nP6iJp3T_smash.jpg" />
+			</a>
+		</div>
+	</header>
+	<div class="entryContent clearfix entryLead" itemprop="description">
+		Во время Nintendo Direct было представлено несколько новых тайтлов, а также обновлений, которые будут доступны на Switch в этом году и "когда-то в будущем". Последнее касается официально анонсированной Undertale. Вот полный список, чего ждать:
+
+Undertale &mdash; пока без даты релиза, но сказали, что выйдет
+Порт South Park: The Fractured But Whole выйдет 24 апреля
+Little Nightmares в виде полного издания станет доступен 18 мая
+Трилогия Crash Bandicoot выйдет на Switch &mdash; станет доступна 10 июля
+Платное дополнение Splatoon 2 выйдет летом, а скоро бесплатный апдейт 3.0
+Hyrule Warriors...
+	</div>
+</article>
+
+  <article class="entry large clearfix" itemscope itemtype="">
+	<meta itemprop="url" content="" />
+	<header class="clearfix">
+		<h2 class="entryTitle">
+			<a id="name6" href="" itemprop="headline" title="Новые фото изданий и дата релиза Undertale на PS4 и PS Vita">Новые фото изданий и дата релиза Undertale на PS4 и PS Vita</a>
+		</h2>
+		<div class="entryByline style-full">
+  <a class="entryComments" href=""><i class="icon iconComment"></i></a>
+</div>
+<div class="entryImage">
+			<a href="" title="Новые фото изданий и дата релиза Undertale на PS4 и PS Vita">
+				<img src="https://cdn.shazoo.ru/c670x230/211227_kkKEfHNmXo_undertale_10_1500410514674.jpg" />
+			</a>
+		</div>
+	</header>
+	<div class="entryContent clearfix entryLead" itemprop="description">
+		По-своему уникальная и очень популярная RPG Undertale уже скоро появится на PS4 и PS Vita. Разработчики наметили выход проекта на консоли на 15 августа этого года и подробней показали издания игры.
+Undertale можно предзаказать в PSN за 15 долларов, причем после покупки игра будет доступна на обеих устройствах. Кроме того в магазине Fangamer&nbsp;уже можно оформить покупку стардартного и коллекционного физических изданий проекта, которые начнут отгружать в сентябре. Первое стоит 25 долларов и идет с 24-страничным буклетом, а коллекционка с полным саундтреком, буклетом с нотами и позолоченным м...
+	</div>
+</article>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{% static "images/hm.gif" %}" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{% static "images/chara.gif" %}" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{% static "images/флауи.gif" %}" class="img-fluid" alt="">
+          <a href="gfgg">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{% static "images/sans.gif" %}" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{% static "images/печалька.gif" %}" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{% static "images/skeletons.gif" %}" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Undertale.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR
+
+
+
+
+
+
+
+
+
+</body>
+</html>

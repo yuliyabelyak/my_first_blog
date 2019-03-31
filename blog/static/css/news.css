@@ -1,0 +1,44 @@
+body{
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+.main{
+  width: 80%;
+  margin: auto;
+  background-color: black;
+  text-align: center;
+  color:#789283;
+  text:#15126F;
+}
+
+#contentWrapper{
+  margin-top: 5%;
+}
+
+footer{
+  margin-top: 15%;
+}
+a {
+  color:#4039FF;
+}
+nav{
+  background-color:#6E81B5;
+}
+#name{
+  font-family: cursive;
+}
+#name2{
+  font-family: cursive;
+}
+#name3{
+  font-family: cursive;
+}
+#name4{
+  font-family: cursive;
+}
+#name5{
+  font-family: cursive;
+}
+#name6{
+  font-family: cursive;
+}
